@@ -42,8 +42,8 @@ int main(int argc, char **argv)
 	ros::NodeHandle pnh("~");
 
 	// Subscriber, Publisherの定義
-    ros::Subscriber waypoints_A_number_sub = nh.subscribe("waypoints_A_number_now", 10, numberCallback);
-    ros::Publisher waypoints_A_number_pub = nh.advertise<std_msgs::Int16>("waypoints_A_number_next", 10);
+    ros::Subscriber waypoints_A_number_sub = nh.subscribe("robotA/waypoints_A_number_now", 10, numberCallback);
+    ros::Publisher waypoints_A_number_pub = nh.advertise<std_msgs::Int16>("robotA/waypoints_A_number_next", 10);
 
 	ros::Rate loop_rate(100);
 

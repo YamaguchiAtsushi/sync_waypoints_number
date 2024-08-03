@@ -15,4 +15,20 @@
         </node> -->
         
     </group>
+
+    <group ns="robotB">
+    <arg name="ojama" default="true"/>
+    <arg name="beego" default="true"/>
+    <arg name="rviz" default="true"/>
+
+        <node name="sync_waypoints_number" pkg="sync_waypoints_number" type="sync_waypoints_number" output="screen">
+        </node>
+
+        <!-- <node name="object_avoid" pkg="saishu" type="object_avoid" output="screen">
+        </node> -->
+
+        <!-- <node name="saishu_detect" pkg="saishu" type="saishu_detect">
+        </node> -->
+        
+    </group>
 </launch>
